@@ -1,10 +1,10 @@
 import Hello from "./Hello.js";
 import Lab5 from "./Lab5.js";
 import express from "express";
-import CourseRoutes from "./Courses/routes.js";
+import CourseRoutes from "./courses/routes.js";
 import ModuleRoutes from "./modules/routes.js";
 import cors from "cors";
-import AssignmentRoutes from "./Assignments/routes.js";
+import AssignmentRoutes from "./assignments/routes.js";
 
 const app = express();
 app.use(
