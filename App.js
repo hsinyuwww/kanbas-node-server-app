@@ -1,9 +1,9 @@
 import Hello from "./Hello.js";
 import Lab5 from "./Lab5.js";
 import express from "express";
-import CourseRoutes from "./courses/routes.js";
-import ModuleRoutes from "./modules/routes.js";
 import cors from "cors";
+import ModuleRoutes from "./modules/routes.js";
+import CourseRoutes from "./courses/routes.js";
 import AssignmentRoutes from "./assignments/routes.js";
 
 const app = express();
@@ -14,13 +14,10 @@ app.use(
   })
 );
 app.use(express.json());
-AssignmentRoutes(app);
 ModuleRoutes(app);
 CourseRoutes(app);
+AssignmentRoutes(app);
 Lab5(app);
 Hello(app);
 
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+app.listen(process.env.PORT || 4000);
