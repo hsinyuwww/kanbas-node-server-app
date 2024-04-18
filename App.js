@@ -4,7 +4,7 @@ import Hello from "./Hello.js";
 import Lab5 from "./Lab5.js";
 import cors from "cors";
 import CourseRoutes from "./Courses/routes.js";
-import ModuleRoutes from "./modules/routes.js";
+import ModuleRoutes from "./Modules/routes.js";
 import AssignmentRoutes from "./assignments/routes.js";
 import SessionRoutes from "./SessionRoutes.js";
 import mongoose from "mongoose";
