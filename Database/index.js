@@ -6,9 +6,9 @@ import grades from "./grades.js";
 import enrollments from "./enrollments.js";
 export default {
   courses: courses,
-  modules: modules,
-  assignments: assignments,
-  users: users,
-  grades: grades,
-  enrollments: enrollments,
+  modules,
+  assignments,
+  users,
+  grades,
+  enrollments,
 };
