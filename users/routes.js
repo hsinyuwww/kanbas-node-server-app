@@ -75,7 +75,7 @@ export default function UserRoutes(app) {
     res.send(status);
   });
   app.get("/api/users", fetchAllUsers);
-  app.post("/api/users/signup/", signup);
+  app.post("/api/users/signup", signup);
   app.post("/api/users/signin", signin);
   app.get("/api/users/profile", profile);
   app.get("/api/users/signout", signout);
